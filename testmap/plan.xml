@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <plan>
+        <color>green</color>
+        <xstart>
+            <id>0</id>
+        </xstart>
+        <dstart>
+            <id>1</id>
+            <id>3</id>
+        <dstart>
+        <goal>
+            <id>4</id>
+        </goal>
+    </plan>
+</root>

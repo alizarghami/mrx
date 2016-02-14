@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <player>
+        <type>x</type>
+        <color>white</color>
+    </player>
+    <player>
+        <type>d</type>
+        <color>blue</color>
+    </player>
+    <player>
+        <type>d</type>
+        <color>red</color>
+    </player>
+</root>

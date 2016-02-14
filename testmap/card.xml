@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <card>
+        <id>0</id>
+        <transport>taxi</transport>
+        <special>a</special>
+    </card>
+    <card>
+        <id>1</id>
+        <transport>taxi</transport>
+        <special>b</special>
+    </card>
+    <card>
+        <id>2</id>
+        <transport>taxi</transport>
+        <special>c</special>
+    </card>
+    <card>
+        <id>3</id>
+        <transport>train</transport>
+        <special>d</special>
+    </card>
+    <card>
+        <id>4</id>
+        <transport>train</transport>
+        <special>b</special>
+    </card>
+    <card>
+        <id>5</id>
+        <transport>plane</transport>
+        <special>a</special>
+    </card>
+</root>
