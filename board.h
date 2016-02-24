@@ -1,32 +1,32 @@
 #ifndef BOARD_H
 #define BOARD_H
 
+#include <iostream>
 #include <vector>
 #include <string>
 #include "location.h"
 #include "card.h"
-#include"initcard.h"
+#include "plan.h"
+#include "player.h"
+#include "parser.h"
 
 namespace mrx {
 
-enum class PLAN{
-    Green,
-    Yellow,
-    Orange,
-    MAX_PLANS
-};
-
 class Board
 {
-    PLAN _plan;
-    std::vector<Location> _board;
+    std::vector<Plan> _plans;
+    std::vector<Location> _map;
     std::vector<Card> _cards;
-    std::vector<InitCard> _initCards;
+    std::vector<Player> _players;
+
+    Plan _plan;
+    std::vector<Card*> _available;
+    std::vector<Card*> _discarded;
 public:
-    Board(std::string, PLAN, std::string, std::string);
-    void ParseBoardInfo(std::string, PLAN);
-    void ParseCardInfo(std::string);
-    void ParseInitCardInfo(std::string);
+    Board();
+    Board(std::string);
+    void initialize(std::string);
+    void choosePlan();
 };
 
 }

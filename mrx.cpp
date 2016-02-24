@@ -15,4 +15,9 @@ MrX::MrX(COLOR color): Player(color), _ifVisible(false)
 {
 }
 
+const char* MrX::getType()
+{
+    return "Mr. X";
+}
+
 }

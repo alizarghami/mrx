@@ -15,4 +15,9 @@ Detective::Detective(COLOR color): Player(color)
 {
 }
 
+const char* Detective::getType()
+{
+    return "Detective";
+}
+
 }

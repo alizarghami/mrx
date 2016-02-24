@@ -14,6 +14,7 @@ public:
     MrX(COLOR, Location*, std::vector<Card*>);
     MrX(COLOR, Location*);
     MrX(COLOR);
+    virtual const char* getType();
 };
 
 }

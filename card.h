@@ -1,19 +1,22 @@
 #ifndef CARD_H
 #define CARD_H
 
+#include <string>
+#include <ostream>
+
 namespace mrx {
 
-enum class TRANSPORTATION{
+enum TRANSPORTATION{
     Taxi,
     Train,
     Plane
 };
 
 enum class SPECIAL{
-    A,
-    B,
-    C,
-    D
+    Double,
+    Undercover,
+    Investigate,
+    Operation
 };
 
 class Card
@@ -25,9 +28,17 @@ class Card
 public:
     Card(TRANSPORTATION, SPECIAL);
     int getID();
+    TRANSPORTATION getTransport();
+    SPECIAL getSpecial();
 
+    friend std::ostream& operator<<(std::ostream&, Card&);
     friend bool operator==(Card, Card);
 };
+
+TRANSPORTATION toTRANSPORTATION(std::string);
+SPECIAL toSPECIAL(std::string);
+const char* TRANStoString(TRANSPORTATION);
+const char* SPCLtoString(SPECIAL);
 
 }
 #endif // CARD_H

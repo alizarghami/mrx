@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <ostream>
 #include "card.h"
 
 namespace mrx {
@@ -22,9 +23,12 @@ public:
     Location(int, std::string, bool, bool, std::vector<Location*>, std::vector<Location*>, std::vector<Location*>);
     Location(int,std::string, bool,bool);
     Location(int, std::string);
+    Location();
 
+    int getID();
     void addPath(Location*, TRANSPORTATION);
 
+    friend std::ostream& operator<<(std::ostream&, Location);
 
 };
 

@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <root>
-    <card>
-        <id>0</id>
+    <card count="2">
         <transport>taxi</transport>
-        <special>a</special>
+        <special>double</special>
     </card>
-    <card>
-        <id>1</id>
+    <card count="1">
         <transport>taxi</transport>
-        <special>b</special>
+        <special>investigate</special>
     </card>
-    <card>
-        <id>2</id>
-        <transport>taxi</transport>
-        <special>c</special>
-    </card>
-    <card>
-        <id>3</id>
+    <card count="1">
         <transport>train</transport>
-        <special>d</special>
+        <special>operation</special>
     </card>
-    <card>
-        <id>4</id>
+    <card count="1">
         <transport>train</transport>
-        <special>b</special>
+        <special>undercover</special>
     </card>
-    <card>
-        <id>5</id>
+    <card count="1">
         <transport>plane</transport>
-        <special>a</special>
+        <special>double</special>
     </card>
 </root>

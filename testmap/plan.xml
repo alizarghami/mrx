@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <root>
-    <plan>
-        <color>green</color>
+    <plan color="yellow">
         <xstart>
             <id>0</id>
         </xstart>

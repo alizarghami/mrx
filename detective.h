@@ -13,6 +13,7 @@ public:
     Detective(COLOR, Location*, std::vector<Card*>);
     Detective(COLOR, Location*);
     Detective(COLOR);
+    virtual const char* getType();
 };
 
 }
